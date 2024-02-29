@@ -1,0 +1,29 @@
+.ticker {
+    background-color: #18b170;
+    max-width: 100%;
+    color: white;
+    overflow: hidden;
+    position: absolute;
+    top: 566px;
+
+    & div {
+        display: flex;
+        width: 200%;
+        animation: ticker 20s linear infinite;
+      }
+
+    & h1 {
+        white-space: nowrap;
+        width: 100%;
+      }
+  }
+
+
+  @keyframes ticker {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
